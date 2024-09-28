@@ -4,11 +4,41 @@
     box-sizing: border-box;
 }
 
-body {
+body[data-theme="light"] {
     background-color: #fff;
     color: #000;
-    font-family: "Roboto", sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme="dark"] footer {
+    background-color: #000;
+    color: #fff;
+}
+
+body[data-theme="dark"] .footer-text p{
+    background-color: #000;
+    color: #fff;
+}
+
+body[data-theme="dark"] .foot-right p   {
+    background-color: #000;
+    color: #fff;
+}
+
+body[data-theme="dark"] .contact-details img {
+    filter: invert(100%);
+}
+
+body[data-theme="dark"] .contact-details .sec-det-img{
+    filter: invert(1%);
+}
+
+body[data-theme="dark"] .follow-us img {
+    filter: invert(100%);
+}
+
+body[data-theme="dark"] .follow-us a .sec-fol-img  {
+    filter: invert(1%);
 }
 
 footer {
@@ -44,6 +74,10 @@ footer {
     font-size: 16px;
     color: #333;
     margin: 5px 0;
+}
+.footer-text a{
+    color: rgb(7, 37, 204);
+    text-decoration: none;
 }
 
 .foot-right {

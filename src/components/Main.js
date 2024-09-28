@@ -12,10 +12,8 @@ import flutterlogo from './Images/flutterlogo.png';
 export const Main = () => {
     const [activeQuestion, setActiveQuestion] = useState(null);
 
-    // Ref for the join button
     const joinButtonRef = useRef(null);
 
-    // Function to scroll to "Get To Know Us" section
     const handleJoinButtonClick = () => {
         const targetSection = document.getElementById("knowUs");
         if (joinButtonRef.current) {
@@ -27,7 +25,6 @@ export const Main = () => {
         }
     };
 
-    // Function to toggle FAQ answers
     const toggleAnswer = (questionId) => {
         setActiveQuestion(prev => prev === questionId ? null : questionId);
     };
@@ -197,84 +194,68 @@ export const Main = () => {
 
                     {/* Question 1 */}
                     <div className="faq-item">
-                        <div className="faq-question" onClick={() => toggleAnswer(1)}>
-                            <span className="toggle-icon" id="a1">{activeQuestion === 1 ? '' : ''}</span>
+                        <div className="faq-question" onClick={() => toggleAnswer('answer1')}>
+                            <span className={`toggle-icon ${activeQuestion === 'answer1' ? 'active' : ''}`} id="a1"></span>
                             <span className="Q">&nbsp;&nbsp;&nbsp;What is GDG?</span>
                         </div>
-                        {activeQuestion === 1 && (
-                            <div className="faq-answer" id="answer1">
-                                <p>
-                                    Google Developer Groups (GDG) are community groups for college and university students
-                                    interested in Google developer technologies. Students from all undergraduate or graduate
-                                    programs with an interest in growing as a developer are welcome. By joining a GDG, students
-                                    grow their knowledge in a peer-to-peer learning environment and build solutions for local
-                                    businesses and their community.
-                                </p>
+                        {activeQuestion === 'answer1' && (
+                            <div className="faq-answer faq-answer-1" id="answer1">
+                                <p>Google Developer Groups (GDG) are community groups for college and university students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a GDG, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</p>
                             </div>
                         )}
                     </div>
 
                     {/* Question 2 */}
                     <div className="faq-item">
-                        <div className="faq-question" onClick={() => toggleAnswer(2)}>
-                            <span className="toggle-icon" id="a2">{activeQuestion === 2 ? '' : ''}</span>
+                        <div className="faq-question" onClick={() => toggleAnswer('answer2')}>
+                            <span className={`toggle-icon ${activeQuestion === 'answer2' ? 'active' : ''}`} id="a2"></span>
                             <span className="Q">&nbsp;&nbsp;&nbsp;How can you become a part of GDG?</span>
                         </div>
-                        {activeQuestion === 2 && (
-                            <div className="faq-answer" id="answer2">
-                                <p>
-                                    We conduct an annual team recruitment process. The details of recruitment are posted online a
-                                    few weeks prior. It's a two-step process involving form filling and personal interview.
-                                    Students acing both rounds are selected to be the part of the core team.
-                                </p>
+                        {activeQuestion === 'answer2' && (
+                            <div className="faq-answer faq-answer-2" id="answer2">
+                                <p>We conduct an annual team recruitment process. The details of recruitment are posted online a few weeks prior. It's a two-step process involving form filling and personal interview. Students acing both rounds are selected to be the part of the core team.</p>
                             </div>
                         )}
                     </div>
 
                     {/* Question 3 */}
                     <div className="faq-item">
-                        <div className="faq-question" onClick={() => toggleAnswer(3)}>
-                            <span className="toggle-icon" id="a3">{activeQuestion === 3 ? '' : ''}</span>
+                        <div className="faq-question" onClick={() => toggleAnswer('answer3')}>
+                            <span className={`toggle-icon ${activeQuestion === 'answer3' ? 'active' : ''}`} id="a3"></span>
                             <span className="Q">&nbsp;&nbsp;&nbsp;What does a GDG Lead do?</span>
                         </div>
-                        {activeQuestion === 3 && (
-                            <div className="faq-answer" id="answer3">
-                                <p>
-                                    A GDG Lead fills a lot of shoes. He works with the university to build the club, recruit the
-                                    core team, host workshops, build projects, collaborate with local partners.
-                                </p>
+                        {activeQuestion === 'answer3' && (
+                            <div className="faq-answer faq-answer-3" id="answer3">
+                                <p>A GDG Lead fills a lot of shoes. He works with the university to build the club, recruit the core team, host workshops, build projects, collaborate with local partners.</p>
                             </div>
                         )}
                     </div>
 
                     {/* Question 4 */}
                     <div className="faq-item">
-                        <div className="faq-question" onClick={() => toggleAnswer(4)}>
-                            <span className="toggle-icon" id="a4">{activeQuestion === 4 ? '' : ''}</span>
+                        <div className="faq-question" onClick={() => toggleAnswer('answer4')}>
+                            <span className={`toggle-icon ${activeQuestion === 'answer4' ? 'active' : ''}`} id="a4"></span>
                             <span className="Q">&nbsp;&nbsp;&nbsp;How is DSC related to Google?</span>
                         </div>
-                        {activeQuestion === 4 && (
-                            <div className="faq-answer" id="answer4">
-                                <p>
-                                    Developer Student Clubs (DSC) are university-based community groups powered by Google Developers, and they provide an avenue for students to grow their knowledge and build solutions to solve local problems.
-                                </p>
+                        {activeQuestion === 'answer4' && (
+                            <div className="faq-answer faq-answer-4" id="answer4">
+                                <p>A GDG Lead fills a lot of shoes. He works with the university to build the club, recruit the core team, host workshops, build projects, collaborate with local partners.</p>
                             </div>
                         )}
                     </div>
 
                     {/* Question 5 */}
                     <div className="faq-item">
-                        <div className="faq-question" onClick={() => toggleAnswer(5)}>
-                            <span className="toggle-icon" id="a5">{activeQuestion === 5 ? '' : ''}</span>
+                        <div className="faq-question" onClick={() => toggleAnswer('answer5')}>
+                            <span className={`toggle-icon ${activeQuestion === 'answer5' ? 'active' : ''}`} id="a5"></span>
                             <span className="Q">&nbsp;&nbsp;&nbsp;How to reach us?</span>
                         </div>
-                        {activeQuestion === 5 && (
-                            <div className="faq-answer" id="answer5">
+                        {activeQuestion === 'answer5' && (
+                            <div className="faq-answer faq-answer-5" id="answer5">
                                 <p>Mail us at "dsc.rknec@gmail.com"</p>
                             </div>
                         )}
                     </div>
-
                 </div>
             </section>
         </main>

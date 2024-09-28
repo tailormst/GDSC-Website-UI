@@ -11,9 +11,18 @@ body[data-theme="light"] {
 }
 
 body[data-theme="dark"] {
-    background-color: #121212;
+    background-color: #000;
     color: #ffffff;
 }
+
+body[data-theme="dark"] .nav-bar {
+    background-color: #000;
+}
+
+body[data-theme="dark"] .link-a a {
+    color: #fff;
+}
+
 
 header {
     height: 55px;

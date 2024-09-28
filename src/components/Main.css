@@ -4,10 +4,84 @@
     box-sizing: border-box;
 }
 
-body {
+body[data-theme="light"] {
     background-color: #fff;
     color: #000;
-    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme="dark"] {
+    background-color: #000;
+    color: #ffffff;
+}
+
+body[data-theme="dark"] .one .title p {
+    background-color: #000;
+    color: #ffffff;
+}
+
+body[data-theme="dark"] .one-first-part .first-img-bio  {
+    background-color: #000;
+    color: #ffffff;
+}
+
+body[data-theme="dark"] .two h3 {
+    background-color: #000;
+    color: #ffffff;
+}
+
+body[data-theme="dark"] .two-main-part .mission .mis-head-1 {
+    background-color: #000;
+    color: #ffffff;
+}
+body[data-theme="dark"] .two-main-part .mission .mis-head-2  {
+    background-color: #000;
+    color: #ffffff;
+}
+body[data-theme="dark"] .two-main-part .mission .mis-head-3 {
+    background-color: #000;
+    color: #ffffff;
+}
+body[data-theme="dark"]  .inner-circle {
+    background-color: #000;
+    color: #ffffff;
+}
+body[data-theme="dark"]  .card .title {
+    background-color: #000;
+    color: #ffffff;
+}
+body[data-theme="dark"]  .contain-part h2 .tec {
+    background-color: #000;
+    color: #ffffff;
+}
+body[data-theme="dark"]  .contain-part p {
+    background-color: #000;
+    color: #ffffff;
+}
+
+body[data-theme="dark"]  .faq-item .Q {
+    color: #000;
+}
+
+body[data-theme="dark"]  .faq-container h1 {
+    background-color: #000;
+    color: #ffffff;
+}
+
+body[data-theme="dark"]  .faq-answer-1 {
+    color: #000
+}
+body[data-theme="dark"]  .faq-answer-2 {
+    color: #000
+}
+body[data-theme="dark"]  .faq-answer-3 {
+    color: #000
+}
+body[data-theme="dark"]  .faq-answer-4 {
+    color: #000
+}
+body[data-theme="dark"]  .faq-answer-5 {
+    color: #000
 }
 
 main{
@@ -461,7 +535,6 @@ main{
 }
 
 .faq-answer-1 {
-    display: none;
     width: 80%;
     margin: 20px auto;
     padding: 15px;
@@ -477,7 +550,6 @@ main{
 }
 
 .faq-answer-2 {
-    display: none;
     padding: 15px;
     width: 80%;
     margin: 20px auto;
@@ -493,7 +565,6 @@ main{
 }
 
 .faq-answer-3 {
-    display: none;
     padding: 15px;
     width: 80%;
     margin: 20px auto;
@@ -510,7 +581,6 @@ main{
 
 
 .faq-answer-4 {
-    display: none;
     padding: 15px;
     width: 80%;
     margin: 20px auto;
@@ -527,7 +597,6 @@ main{
 
 
 .faq-answer-5 {
-    display: none;
     padding: 15px;
     width: 80%;
     margin: 20px auto;
@@ -569,6 +638,10 @@ p {
         font-size: 2rem;
         flex-direction: column;
         align-items: center;
+    }
+
+    .one .title span{
+        display:inline-block;
     }
 
     .one .title p {

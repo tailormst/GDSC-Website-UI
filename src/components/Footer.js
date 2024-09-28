@@ -9,6 +9,10 @@ import locimg from './Images/locimg.png';
 import twitterimg from './Images/twitterimg.png';
 
 function Footer() {
+
+    const rbuAddress = "https://www.google.com/maps/dir/21.1779584,79.0560768/rbu+nagpur+address+map/@21.1771851,79.0536115,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bd4c1006cc78ce9:0x37afa03de75a8708!2m2!1d79.0611366!2d21.1763009?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D";
+
+    const gdsc = "https://rcoem-gdsc.netlify.app/"
     return (
         <footer>
             <div className="footer">
@@ -17,13 +21,13 @@ function Footer() {
                     <div className="footer-text">
                         <p>Google Developers Group</p>
                         <p>
-                            <a href="#">On Campus</a> &bull; Ramdeobaba University
+                            <a href={gdsc}>On Campus</a> &bull; Ramdeobaba University
                         </p>
                     </div>
                 </div>
                 <div className="foot-right">
                     <div className="contact-details">
-                        <a href="https://goo.gl/maps/53G6JJXGittikhadan">
+                        <a href={rbuAddress}>
                             <img src={locimg} alt="Location" />
                         </a>
                         <p>
