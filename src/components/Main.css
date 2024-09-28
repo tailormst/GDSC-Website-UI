@@ -1,0 +1,910 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    margin-top: 150px;
+}
+
+.one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one .title {
+    text-align: center;
+}
+
+.one .title h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.one .title p {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: rgb(77, 75, 75);
+    position: relative;
+    top: 20px;
+}
+
+.g {
+    color: #4285F4;
+}
+
+.o {
+    color: #EA4335;
+}
+
+.o:nth-of-type(3) {
+    color: #FBBC05;
+}
+
+.g:nth-of-type(4) {
+    color: #34A853;
+}
+
+.l {
+    color: #4285F4;
+}
+
+.e {
+    color: #EA4335;
+}
+
+.one-first-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-top: 80px;
+}
+
+.one-first-part img {
+    width: 50%;
+}
+
+.one-first-part .first-img-bio {
+    margin-top: 40px;
+    font-size: 2.5rem;
+    color: rgb(77, 75, 75);
+    text-align: center;
+}
+
+.one-first-part button {
+    margin-top: 50px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 15px;
+    background-color: rgb(6, 135, 190);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.arrow-container {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.arrow {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid #333;
+    margin: 10px auto;
+    transition: transform 0.3s ease;
+    filter: invert(50%);
+}
+
+.join-animation {
+    animation: joinButtonClick 0.5s ease;
+}
+
+@keyframes joinButtonClick {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.two {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.two h3 {
+    margin-top: 50px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(77, 75, 75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-main-part {
+    margin-top: 60px;
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.two-main-part .mission .mis-head-1 {
+    margin-top: 70px;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(77, 75, 75);
+    border-radius: 15%;
+    border-bottom: 5px solid rgb(6, 135, 190);
+}
+
+.two-main-part .mission-part {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row;
+}
+
+.two-main-part .mission-part .right-part .theory-1 {
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 10px;
+    padding-right: 20px;
+    border-right: 10px solid rgb(6, 135, 190);
+    text-align: right;
+}
+
+.two-main-part .mission .mis-head-2 {
+    margin-top: 70px;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(77, 75, 75);
+    border-radius: 15%;
+    border-bottom: 5px solid rgba(0, 128, 0, 0.751);
+}
+
+.two-main-part .mission-part .right-part .theory-2 {
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 10px;
+    padding-left: 20px;
+    border-left: 10px solid rgba(0, 128, 0, 0.751);
+    text-align: left;
+}
+
+.two-main-part .mission .mis-head-3 {
+    margin-top: 70px;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(77, 75, 75);
+    border-radius: 15%;
+    border-bottom: 5px solid rgba(239, 197, 32, 0.853);
+}
+
+.two-main-part .mission-part .right-part .theory-3 {
+    font-size: 2rem;
+    font-weight: 400;
+    border-radius: 10px;
+    padding-right: 20px;
+    border-right: 10px solid rgba(239, 197, 32, 0.853);
+    text-align: right;
+}
+
+.three {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    margin: 20px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+
+.circle:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#4285F4 0 25%, #EA4335 25% 50%, #FBBC05 50% 75%, #34A853 75% 100%);
+}
+
+.inner-circle {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+}
+
+.card .title {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+}
+
+.four {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.contain-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tech-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contain-part p {
+    font-size: 1.3rem;
+    color: rgb(77, 75, 75);
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contain-part h2 .tec {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.contain-part h2 {
+    margin-top: 40px;
+    font-size: 2.5rem;
+    color: rgb(77, 75, 75);
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid red;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.card-2 {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.66);
+    transition: transform 0.2s;
+}
+
+.card-2-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-2-1:nth-child(1) .line {
+    width: 60%;
+    margin: auto;
+    border-top: 7px solid rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
+.card-2-1:nth-child(2) .line {
+    width: 60%;
+    margin: auto;
+    border-top: 7px solid rgb(6, 135, 190);
+    border-radius: 5px;
+}
+
+.card-2-1:nth-child(3) .line {
+    width: 60%;
+    margin: auto;
+    border-top: 7px solid rgba(0, 128, 0, 0.751);
+    border-radius: 5px;
+}
+
+.card-2:hover {
+    transform: translateY(-10px);
+}
+
+.tech-contain .card-2 .img1 {
+    width: 130px;
+}
+
+.tech-contain .card-2 .img2 {
+    width: 90px;
+}
+
+.tech-contain .card-2 .img3 {
+    width: 80px;
+}
+
+.card-2 h3 {
+    margin: 0;
+    color: #333;
+}
+
+.arrow-2 {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid #333;
+    margin: 10px auto;
+    transition: transform 0.3s ease;
+    filter: invert(50%);
+    width: 10px;
+}
+
+/* FAQ */
+
+.five {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.faq-container h1 {
+    font-size: 3rem;
+    color: rgb(77, 75, 75);
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.faq-item .Q {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 10px solid rgba(128, 128, 128, 0.442);
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #e1e1e1;
+}
+
+.faq-answer-1 {
+    display: none;
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 10px solid rgba(128, 128, 128, 0.403);
+    border-left: 10px solid red;
+    margin-bottom: 100px;
+}
+
+#a1 {
+    border-color: red;
+}
+
+.faq-answer-2 {
+    display: none;
+    padding: 15px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 10px solid rgba(128, 128, 128, 0.403);
+    border-left: 10px solid rgba(0, 128, 0, 0.751);
+    margin-bottom: 100px;
+}
+
+#a2 {
+    border-color: rgba(0, 128, 0, 0.751);
+}
+
+.faq-answer-3 {
+    display: none;
+    padding: 15px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 10px solid rgba(128, 128, 128, 0.403);
+    border-left: 10px solid rgb(6, 135, 190);
+    margin-bottom: 100px;
+}
+
+#a3 {
+    border-color: rgb(6, 135, 190);
+}
+
+
+.faq-answer-4 {
+    display: none;
+    padding: 15px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 10px solid rgba(128, 128, 128, 0.403);
+    border-left: 10px solid rgba(239, 197, 32, 0.853);
+    margin-bottom: 100px;
+}
+
+#a4 {
+    border-color: rgba(239, 197, 32, 0.853);
+}
+
+
+.faq-answer-5 {
+    display: none;
+    padding: 15px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 10px solid rgba(128, 128, 128, 0.403);
+    border-left: 10px solid red;
+    margin-bottom: 100px;
+}
+
+#a5 {
+    border-color: red;
+}
+
+
+.toggle-icon {
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid;
+    border-top: 3px solid;
+    transform: rotate(225deg) skew(10deg, 10deg);
+}
+
+.faq-answer-1,
+.faq-answer-2,
+.faq-answer-3,
+.faq-answer-4,
+.faq-answer-5,
+p {
+    font-size: 21px;
+    line-height: 1.2;
+    word-spacing: 1.5;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 575px) {
+    .one .title h1 {
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .one .title p {
+        font-size: 1.8rem;
+        top: 50px;
+    }
+
+    .one-first-part img {
+        width: 80%;
+    }
+
+    .one-first-part .first-img-bio {
+        font-size: 1.5rem;
+    }
+
+
+    .two-main-part .mission-part .left-part>img {
+        width: 60%;
+    }
+
+    .two-main-part .mission-part {
+        flex-direction: column;
+    }
+
+    .two-main-part .mission-part .right-part .theory-1 {
+        font-size: 1.3rem;
+        border-right: 7px solid rgb(6, 135, 190);
+        text-align: center;
+    }
+
+    .two-main-part .mission-part .right-part .theory-2 {
+        font-size: 1.3rem;
+        border-left: 7px solid rgba(0, 128, 0, 0.751);
+        text-align: center;
+    }
+
+    .two-main-part .mission-part .right-part .theory-3 {
+        font-size: 1.3rem;
+        border-right: 7px solid rgba(239, 197, 32, 0.853);
+        text-align: center;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        font-size: 24px;
+    }
+
+    .inner-circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .tech-contain {
+        flex-direction: column;
+    }
+
+    .card-2 {
+        width: 90%;
+    }
+
+    .faq-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .faq-container {
+        padding: 10px;
+    }
+
+    .faq-question .Q {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .toggle-icon {
+        display: none;
+    }
+
+    .faq-answer-1,
+    .faq-answer-2,
+    .faq-answer-3,
+    .faq-answer-4,
+    .faq-answer-5,
+    p {
+        font-size: 15px;
+        line-height: 1;
+        word-spacing: 1;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .one .title h1 {
+        font-size: 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .one .title p {
+        font-size: 2rem;
+    }
+
+    .one-first-part img {
+        width: 70%;
+    }
+
+    .two-main-part .mission-part {
+        flex-direction: column;
+    }
+
+    .two-main-part .mission-part .right-part .theory-1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .two-main-part .mission-part .right-part .theory-2 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .two-main-part .mission-part .right-part .theory-3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+        font-size: 28px;
+    }
+
+    .inner-circle {
+        width: 85px;
+        height: 85px;
+    }
+
+    .title {
+        font-size: 17px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .tech-contain {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card-2 {
+        width: 90%;
+    }
+
+    .faq-container h1 {
+        font-size: 1.75rem;
+    }
+
+    .faq-container {
+        padding: 15px;
+    }
+
+    .faq-question .Q {
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .one .title h1 {
+        font-size: 3.5rem;
+    }
+
+    .one-first-part img {
+        width: 60%;
+    }
+
+    .two-main-part .mission-part {
+        flex-direction: column;
+    }
+
+    .two-main-part .mission-part .right-part .theory-1 {
+        font-size: 1.8rem;
+        border-right: 7px solid rgb(6, 135, 190);
+        text-align: center;
+    }
+
+    .two-main-part .mission-part .right-part .theory-2 {
+        font-size: 1.8rem;
+        border-left: 7px solid rgba(0, 128, 0, 0.751);
+        text-align: center;
+    }
+
+    .two-main-part .mission-part .right-part .theory-3 {
+        font-size: 1.8rem;
+        border-right: 7px solid rgba(239, 197, 32, 0.853);
+        text-align: center;
+    }
+
+    .circle {
+        width: 130px;
+        height: 130px;
+        font-size: 32px;
+    }
+
+    .inner-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    .title {
+        font-size: 17px;
+    }
+
+    .tech-contain {
+        justify-content: space-evenly;
+    }
+
+    .card-2 {
+        width: 250px;
+    }
+
+    .faq-container h1 {
+        font-size: 2rem;
+    }
+
+    .faq-container {
+        padding: 20px;
+    }
+
+    .faq-question .Q {
+        font-size: 22px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .one-first-part img {
+        width: 55%;
+    }
+
+    .two-main-part .mission-part {
+        flex-direction: column;
+    }
+
+    .two-main-part .mission-part .right-part .theory-1 {
+        font-size: 1.8rem;
+        border-radius: 10px;
+        border-right: 7px solid rgb(6, 135, 190);
+        text-align: center;
+    }
+
+    .two-main-part .mission-part .right-part .theory-2 {
+        font-size: 1.8rem;
+        border-radius: 10px;
+        border-left: 7px solid rgba(0, 128, 0, 0.751);
+        text-align: center;
+    }
+
+    .two-main-part .mission-part .right-part .theory-3 {
+        font-size: 1.8rem;
+        border-radius: 10px;
+        border-right: 7px solid rgba(239, 197, 32, 0.853);
+        text-align: center;
+    }
+
+    .circle {
+        width: 140px;
+        height: 140px;
+        font-size: 34px;
+    }
+
+    .inner-circle {
+        width: 95px;
+        height: 95px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .tech-contain {
+        justify-content: space-between;
+    }
+
+    .card-2 {
+        width: 250px;
+    }
+
+    .faq-container h1 {
+        font-size: 2.25rem;
+    }
+
+    .faq-container {
+        padding: 25px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .one-first-part img {
+        width: 50%;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+        font-size: 36px;
+    }
+
+    .inner-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .tech-contain {
+        justify-content: space-between;
+    }
+
+    .card-2 {
+        width: 250px;
+    }
+
+    .faq-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .faq-container {
+        padding: 30px;
+    }
+}

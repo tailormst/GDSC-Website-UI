@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body[data-theme="light"] {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme="dark"] {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.nav-bar {
+    height: 55px;
+    width: 100%;
+    background-color: #efefef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.left-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-nav img {
+    width: 50px;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-link {
+    margin-left: auto;
+}
+
+.link-a {
+    display: flex;
+    gap: 30px;
+}
+
+.link-a a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+/* Styling for the theme switcher */
+.theme-switch {
+    display: flex;
+    align-items: center;
+}
+
+#theme-toggle {
+    display: none;
+}
+
+.theme-label {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: #999;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.switch {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.sun-icon,
+.moon-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.sun-icon {
+    left: 2px;
+}
+
+.moon-icon {
+    right: 2px;
+    opacity: 0;
+}
+
+#theme-toggle:checked + .theme-label .switch {
+    left: calc(100% - 23px);
+}
+
+#theme-toggle:checked + .theme-label .sun-icon {
+    opacity: 0;
+}
+
+#theme-toggle:checked + .theme-label .moon-icon {
+    opacity: 1;
+}
+
+@media (max-width: 575px) {
+    .link-here {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .link-here {
+        display: none;
+    }
+}
